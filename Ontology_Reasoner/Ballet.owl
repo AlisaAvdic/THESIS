@@ -1,0 +1,1009 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY ballet "http://www.semanticweb.org/ontologies/2014/8/Ballet#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/ontologies/2014/8/Ballet_v0.1"
+     xml:base="http://www.semanticweb.org/ontologies/2014/8/Ballet_v0.1"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:ballet="http://www.semanticweb.org/ontologies/2014/8/Ballet#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ontologies/2014/8/Ballet_v0.1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#comment -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;comment"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
+    
+
+
+    <!-- http://www.w3.org/2000/01/rdf-schema#range -->
+
+    <owl:AnnotationProperty rdf:about="&rdfs;range"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <owl:ObjectProperty rdf:about="&owl;topObjectProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topDataProperty -->
+
+    <owl:DatatypeProperty rdf:about="&owl;topDataProperty"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Arabesque -->
+
+    <owl:Class rdf:about="&ballet;Arabesque">
+        <rdfs:subClassOf rdf:resource="&ballet;Position"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#ArabesqueATerre -->
+
+    <owl:Class rdf:about="&ballet;ArabesqueATerre">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#ArabesqueDeFacé -->
+
+    <owl:Class rdf:about="&ballet;ArabesqueDeFacé">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#ArabesqueOuverte -->
+
+    <owl:Class rdf:about="&ballet;ArabesqueOuverte">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#ArabesquePenchee -->
+
+    <owl:Class rdf:about="&ballet;ArabesquePenchee">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#ArabesquePliee -->
+
+    <owl:Class rdf:about="&ballet;ArabesquePliee">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Assemblé -->
+
+    <owl:Class rdf:about="&ballet;Assemblé">
+        <rdfs:subClassOf rdf:resource="&ballet;Jump"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AssembléBattu -->
+
+    <owl:Class rdf:about="&ballet;AssembléBattu">
+        <rdfs:subClassOf rdf:resource="&ballet;Assemblé"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AssembléBattuDessous -->
+
+    <owl:Class rdf:about="&ballet;AssembléBattuDessous">
+        <rdfs:subClassOf rdf:resource="&ballet;AssembléBattu"/>
+        <rdfs:subClassOf rdf:resource="&ballet;AssembléDessous"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AssembléBattuDessus -->
+
+    <owl:Class rdf:about="&ballet;AssembléBattuDessus">
+        <rdfs:subClassOf rdf:resource="&ballet;AssembléBattu"/>
+        <rdfs:subClassOf rdf:resource="&ballet;AssembléDessus"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AssembléCoupeDevant -->
+
+    <owl:Class rdf:about="&ballet;AssembléCoupeDevant">
+        <rdfs:subClassOf rdf:resource="&ballet;Assemblé"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AssembléDerriere -->
+
+    <owl:Class rdf:about="&ballet;AssembléDerriere">
+        <rdfs:subClassOf rdf:resource="&ballet;Assemblé"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AssembléDessous -->
+
+    <owl:Class rdf:about="&ballet;AssembléDessous">
+        <rdfs:subClassOf rdf:resource="&ballet;Assemblé"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AssembléDessus -->
+
+    <owl:Class rdf:about="&ballet;AssembléDessus">
+        <rdfs:subClassOf rdf:resource="&ballet;Assemblé"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AssembléGrand -->
+
+    <owl:Class rdf:about="&ballet;AssembléGrand">
+        <rdfs:subClassOf rdf:resource="&ballet;Assemblé"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AssembléPetit -->
+
+    <owl:Class rdf:about="&ballet;AssembléPetit">
+        <rdfs:subClassOf rdf:resource="&ballet;Assemblé"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Attitude -->
+
+    <owl:Class rdf:about="&ballet;Attitude">
+        <rdfs:subClassOf rdf:resource="&ballet;Position"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AttitudeATerre -->
+
+    <owl:Class rdf:about="&ballet;AttitudeATerre">
+        <rdfs:subClassOf rdf:resource="&ballet;Attitude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AttitudeCroiseDerrière -->
+
+    <owl:Class rdf:about="&ballet;AttitudeCroiseDerrière">
+        <rdfs:subClassOf rdf:resource="&ballet;Attitude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AttitudeÉffacé -->
+
+    <owl:Class rdf:about="&ballet;AttitudeÉffacé">
+        <rdfs:subClassOf rdf:resource="&ballet;Attitude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AttitudeÉpaulée -->
+
+    <owl:Class rdf:about="&ballet;AttitudeÉpaulée">
+        <rdfs:subClassOf rdf:resource="&ballet;Attitude"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Balancé -->
+
+    <owl:Class rdf:about="&ballet;Balancé">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Balançoire -->
+
+    <owl:Class rdf:about="&ballet;Balançoire">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#BalletMove -->
+
+    <owl:Class rdf:about="&ballet;BalletMove">
+        <rdfs:label>BalletMoves</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Balloné -->
+
+    <owl:Class rdf:about="&ballet;Balloné">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#BallonéGrand -->
+
+    <owl:Class rdf:about="&ballet;BallonéGrand">
+        <rdfs:subClassOf rdf:resource="&ballet;Balloné"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Balloté -->
+
+    <owl:Class rdf:about="&ballet;Balloté">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Battement -->
+
+    <owl:Class rdf:about="&ballet;Battement">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#BattementFondu -->
+
+    <owl:Class rdf:about="&ballet;BattementFondu">
+        <rdfs:subClassOf rdf:resource="&ballet;Battement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#BattementFrappé -->
+
+    <owl:Class rdf:about="&ballet;BattementFrappé">
+        <rdfs:subClassOf rdf:resource="&ballet;Battement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#BattementJeté -->
+
+    <owl:Class rdf:about="&ballet;BattementJeté">
+        <rdfs:subClassOf rdf:resource="&ballet;Battement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#BattementTendu -->
+
+    <owl:Class rdf:about="&ballet;BattementTendu">
+        <rdfs:subClassOf rdf:resource="&ballet;Battement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#BodyAlignment -->
+
+    <owl:Class rdf:about="&ballet;BodyAlignment">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#BrasPosition -->
+
+    <owl:Class rdf:about="&ballet;BrasPosition">
+        <rdfs:subClassOf rdf:resource="&ballet;Position"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Brisé -->
+
+    <owl:Class rdf:about="&ballet;Brisé">
+        <rdfs:subClassOf rdf:resource="&ballet;Jump"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#CecchettiFifthArabesque -->
+
+    <owl:Class rdf:about="&ballet;CecchettiFifthArabesque">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#CecchettiFirstArabesque -->
+
+    <owl:Class rdf:about="&ballet;CecchettiFirstArabesque">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Changement -->
+
+    <owl:Class rdf:about="&ballet;Changement">
+        <rdfs:subClassOf rdf:resource="&ballet;Jump"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Chassé -->
+
+    <owl:Class rdf:about="&ballet;Chassé">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Demi-secondeCecchetti -->
+
+    <owl:Class rdf:about="&ballet;Demi-secondeCecchetti">
+        <rdfs:subClassOf rdf:resource="&ballet;BrasPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Detourné -->
+
+    <owl:Class rdf:about="&ballet;Detourné">
+        <rdfs:subClassOf rdf:resource="&ballet;Turn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Entrechat -->
+
+    <owl:Class rdf:about="&ballet;Entrechat">
+        <rdfs:subClassOf rdf:resource="&ballet;Jump"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#EntrechatQuatre -->
+
+    <owl:Class rdf:about="&ballet;EntrechatQuatre">
+        <rdfs:subClassOf rdf:resource="&ballet;Entrechat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#EntrechatSix -->
+
+    <owl:Class rdf:about="&ballet;EntrechatSix">
+        <rdfs:subClassOf rdf:resource="&ballet;Entrechat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#FeetPositions -->
+
+    <owl:Class rdf:about="&ballet;FeetPositions">
+        <rdfs:subClassOf rdf:resource="&ballet;Position"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#FifthPosition -->
+
+    <owl:Class rdf:about="&ballet;FifthPosition">
+        <rdfs:subClassOf rdf:resource="&ballet;FeetPositions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#FirstCecchetti -->
+
+    <owl:Class rdf:about="&ballet;FirstCecchetti">
+        <rdfs:subClassOf rdf:resource="&ballet;BrasPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#FirstPosition -->
+
+    <owl:Class rdf:about="&ballet;FirstPosition">
+        <rdfs:subClassOf rdf:resource="&ballet;FeetPositions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#FourthCecchetti -->
+
+    <owl:Class rdf:about="&ballet;FourthCecchetti">
+        <rdfs:subClassOf rdf:resource="&ballet;BrasPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#FourthPosition -->
+
+    <owl:Class rdf:about="&ballet;FourthPosition">
+        <rdfs:subClassOf rdf:resource="&ballet;FeetPositions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Glissade -->
+
+    <owl:Class rdf:about="&ballet;Glissade">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#GrandBattement -->
+
+    <owl:Class rdf:about="&ballet;GrandBattement">
+        <rdfs:subClassOf rdf:resource="&ballet;Battement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#GrandBattementALaSeconde -->
+
+    <owl:Class rdf:about="&ballet;GrandBattementALaSeconde">
+        <rdfs:subClassOf rdf:resource="&ballet;GrandBattement"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#GrandJeté -->
+
+    <owl:Class rdf:about="&ballet;GrandJeté">
+        <rdfs:subClassOf rdf:resource="&ballet;Jeté"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#GrandPasDeChat -->
+
+    <owl:Class rdf:about="&ballet;GrandPasDeChat">
+        <rdfs:subClassOf rdf:resource="&ballet;PasDeChat"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Jeté -->
+
+    <owl:Class rdf:about="&ballet;Jeté">
+        <rdfs:subClassOf rdf:resource="&ballet;Jump"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Jump -->
+
+    <owl:Class rdf:about="&ballet;Jump">
+        <rdfs:label>Jumps</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#PasDeBourrée -->
+
+    <owl:Class rdf:about="&ballet;PasDeBourrée">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#PasDeChat -->
+
+    <owl:Class rdf:about="&ballet;PasDeChat">
+        <rdfs:subClassOf rdf:resource="&ballet;Jump"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Passé -->
+
+    <owl:Class rdf:about="&ballet;Passé">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Penché -->
+
+    <owl:Class rdf:about="&ballet;Penché">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Piqué -->
+
+    <owl:Class rdf:about="&ballet;Piqué">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Pirouette -->
+
+    <owl:Class rdf:about="&ballet;Pirouette">
+        <rdfs:subClassOf rdf:resource="&ballet;Turn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#PirouetteEnDedans -->
+
+    <owl:Class rdf:about="&ballet;PirouetteEnDedans">
+        <rdfs:subClassOf rdf:resource="&ballet;Pirouette"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#PirouetteEnDehors -->
+
+    <owl:Class rdf:about="&ballet;PirouetteEnDehors">
+        <rdfs:subClassOf rdf:resource="&ballet;Pirouette"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Plié -->
+
+    <owl:Class rdf:about="&ballet;Plié">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Position -->
+
+    <owl:Class rdf:about="&ballet;Position">
+        <rdfs:label>Positions</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Retiré -->
+
+    <owl:Class rdf:about="&ballet;Retiré">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#RondDeJambeATerre -->
+
+    <owl:Class rdf:about="&ballet;RondDeJambeATerre">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#RussianFirstArabesque -->
+
+    <owl:Class rdf:about="&ballet;RussianFirstArabesque">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#RussianFourthArabesque -->
+
+    <owl:Class rdf:about="&ballet;RussianFourthArabesque">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#RussianSecondArabesque -->
+
+    <owl:Class rdf:about="&ballet;RussianSecondArabesque">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#RussianThirdArabesque -->
+
+    <owl:Class rdf:about="&ballet;RussianThirdArabesque">
+        <rdfs:subClassOf rdf:resource="&ballet;Arabesque"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Rélevé -->
+
+    <owl:Class rdf:about="&ballet;Rélevé">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Sauté -->
+
+    <owl:Class rdf:about="&ballet;Sauté">
+        <rdfs:subClassOf rdf:resource="&ballet;Jump"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#SecondCecchetti -->
+
+    <owl:Class rdf:about="&ballet;SecondCecchetti">
+        <rdfs:subClassOf rdf:resource="&ballet;BrasPosition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#SecondPosition -->
+
+    <owl:Class rdf:about="&ballet;SecondPosition">
+        <rdfs:subClassOf rdf:resource="&ballet;FeetPositions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Soubresaut -->
+
+    <owl:Class rdf:about="&ballet;Soubresaut">
+        <rdfs:subClassOf rdf:resource="&ballet;Jump"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#SousSus -->
+
+    <owl:Class rdf:about="&ballet;SousSus">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Soutenu -->
+
+    <owl:Class rdf:about="&ballet;Soutenu">
+        <rdfs:subClassOf rdf:resource="&ballet;Turn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#TempsLevé -->
+
+    <owl:Class rdf:about="&ballet;TempsLevé">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#TempsLié -->
+
+    <owl:Class rdf:about="&ballet;TempsLié">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#ThirdPosition -->
+
+    <owl:Class rdf:about="&ballet;ThirdPosition">
+        <rdfs:subClassOf rdf:resource="&ballet;FeetPositions"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Tombé -->
+
+    <owl:Class rdf:about="&ballet;Tombé">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#TourEnL&apos;Air -->
+
+    <owl:Class rdf:about="&ballet;TourEnL&apos;Air">
+        <rdfs:subClassOf rdf:resource="&ballet;Turn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#ToursChaînés -->
+
+    <owl:Class rdf:about="&ballet;ToursChaînés">
+        <rdfs:subClassOf rdf:resource="&ballet;Turn"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Turn -->
+
+    <owl:Class rdf:about="&ballet;Turn">
+        <rdfs:label>Turn</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Écarté -->
+
+    <owl:Class rdf:about="&ballet;Écarté">
+        <rdfs:subClassOf rdf:resource="&ballet;BodyAlignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Échappé -->
+
+    <owl:Class rdf:about="&ballet;Échappé">
+        <rdfs:subClassOf rdf:resource="&ballet;BalletMove"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#Éffacé -->
+
+    <owl:Class rdf:about="&ballet;Éffacé">
+        <rdfs:subClassOf rdf:resource="&ballet;BodyAlignment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#Thing -->
+
+    <owl:Class rdf:about="&owl;Thing"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#A0001 -->
+
+    <owl:NamedIndividual rdf:about="&ballet;A0001">
+        <rdf:type rdf:resource="&ballet;AssembléBattuDessous"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ontologies/2014/8/Ballet#AR111 -->
+
+    <owl:NamedIndividual rdf:about="&ballet;AR111">
+        <rdf:type rdf:resource="&ballet;ArabesqueATerre"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Twist">
+        <rdfs:comment rdf:datatype="&xsd;string">&quot;Twisting refers to a turning action in which a greater degree occurs at the extremity with little or none at the base&quot; A.H.Guest p.240 Usually arm or spine. </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#T1">
+        <rdfs:comment rdf:datatype="&xsd;string">Page 105 AHG example of arm movements</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Ankle">
+        <rdfs:comment rdf:datatype="&xsd;string">Lower Legs</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#isFollowedBy">
+        <rdfs:comment rdf:datatype="&xsd;string">see Drummond&apos;s paper &quot;Putting OWL in Order: Patterns for Sequences in OWL&quot;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Elbow">
+        <rdfs:comment rdf:datatype="&xsd;string">UpperArms</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#hasBodyPart">
+        <rdfs:comment rdf:datatype="&xsd;string">Body has (many) BodyPart</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#LeftWrist">
+        <rdfs:comment rdf:datatype="&xsd;string">LeftLowerArm</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Spatial">
+        <rdfs:comment rdf:datatype="&xsd;string">Pins</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Step">
+        <rdfs:comment rdf:datatype="&xsd;string">Considering the possible combinations of Levels (3), Directions (8) = 24 and Feet (2)  performing the step we have 48 combinations of simple steps. The options are to have a general step and express the difference by properties or to have if not 48 , 24 or 8 steps as Subclasses of Steps. 
+
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#UniqueBodyPart">
+        <rdfs:comment rdf:datatype="&xsd;string">UniqueBodyParts
+DoubleBodyParts 
+do they have to be disjoint classes??? For example a LeftFoot is LeftLeg but is also Feet, hips (two hips and pelvis is the same)</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Jump">
+        <rdfs:comment rdf:datatype="&xsd;string">What duration does a  jump have???</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Knee">
+        <rdfs:comment rdf:datatype="&xsd;string">(Thighs)</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#FloorPattern">
+        <rdfs:comment rdf:datatype="&xsd;string">A floor patern is the design made by a dancer or several dancers traveling across and/or around the stage area. </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#MovementDescription">
+        <rdfs:comment rdf:datatype="&xsd;string">We devide the description of Movements that occur within the measure into two categories. 
+Temporal (Movement==Actions) and
+NonTemporal (Positions==State) 
+
+The first describe the movement itsself for example (Step,Jump, Turn, Rise, Drop etc) whereas the Position describe the shape in which the body parts are in respect to relationship, bending, streched. 
+For example an arm can do the action of rise, but in different shapes (bend, curved, streched, etc) 
+this has nothing to do with time, its all about shape and relationships about differnet body parts. 
+For example a Roll of the spine is an action with specific interval , its a movement whereas a curve  in the torso is a position. 
+
+Do we need for each specific action the equivalent state? How can we express this without the dublication?
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Degree">
+        <rdfs:comment rdf:datatype="&xsd;string">There are four possible ways to describe the amount of rotation or twist of a part of the body p.243 </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#hasBody">
+        <rdfs:comment rdf:datatype="&xsd;string">a Person has (one and only one)  Body </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#RightKnee">
+        <rdfs:comment rdf:datatype="&xsd;string">RightThigh</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#SimpleJump">
+        <rdfs:comment rdf:datatype="&xsd;string">From both feet to both feet (2-&gt;2)</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Rotation">
+        <rdfs:comment rdf:datatype="&xsd;string">&quot;Rotating refers to turning a part of the body as a unit, i.e. each part turns the same amount&quot;  A.H.Guest p.240</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#LeftKnee">
+        <rdfs:comment rdf:datatype="&xsd;string">LeftThigh</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#hasContent">
+        <rdfs:comment rdf:datatype="&xsd;string">This is a transitive property. A score contains staff, and staff contains measures. If a Staff has Measure1 as Content, and Score has Staff1 as content then Score contains Measure1. 
+see Drummond&apos;s paper &quot;Putting OWL in Order: Patterns for Sequences in OWL&quot;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Grasp">
+        <rdfs:comment rdf:datatype="&xsd;string">This relationship of the hands remains during the whole staff, but we also consider it a content of each unique CT (Calamations Temporal Entity). The problem is how to express the difference between actions that begin in each CT and ends within them, continius movement that are happen during the time e.g. a slow arm gesture that takes two CTs and positions that last for e.g 2 CT</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Turn">
+        <rdfs:comment rdf:datatype="&xsd;string">&quot;Turning is a general term for rotatary actions, covering both rotating in one piece and twisting&quot;  A.H.Guest p.240 Few parts of the body are capable of both actions p.241.The choice of description will depend on whether emphasis should be on the deplacement of the object or the action in the base. In case of the head the description is usually of the head rotating rather than of the neck twisting.
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#hasNext">
+        <rdfs:comment rdf:datatype="&xsd;string">see Drummond&apos;s paper &quot;Putting OWL in Order: Patterns for Sequences in OWL&quot;</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#bodyBelongsTo">
+        <rdfs:comment rdf:datatype="&xsd;string">Body belongsTo (one and only one) Person </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#isPartOfBody">
+        <rdfs:comment rdf:datatype="&xsd;string">BodyPart isPartOf  (only one) Body 
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#RightAnkle">
+        <rdfs:comment rdf:datatype="&xsd;string">RightLowerLeg</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#DoubleBodyPart">
+        <rdfs:comment rdf:datatype="&xsd;string">&quot;The parts of the arm have specific symbols for right and left sides. Originally the parts of the leg did not, right or left were known from placemnt on the staff&quot; AHG p.197  In this work we need to differenciate the right and left as we are not representing the placement on staff but the interpretation of this (Conceptual Approach).  Additionally with this model we can refer to left foot, right foot or both.
+Labanotation also provides signs for the whole leg, whole arm , or part of it, our ontology represents this knowledge. </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Support">
+        <rdfs:comment rdf:datatype="&xsd;string">referes to anything that would be written on the Support column, it is about </rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#isPerformedBy">
+        <rdfs:comment rdf:datatype="&xsd;string">a Movement is PerfomedBy a Body or a BodyPart</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Hop">
+        <rdfs:comment rdf:datatype="&xsd;string">From one foot to the same foot
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#BodyPart">
+        <rdfs:comment rdf:datatype="&xsd;string">In Labanotation, the signs of Body Parts are referred to the individual joints of Body and Limbs. These are placed to show the movement of specific parts. It is important to note the difference in the meaning of these symbols depending on the movement itself. The type of the movement implies a more specific part of the Body Part. For example directional movenent indication of the arm, means that the arm is moving in space whereas when it comes to bending or flextion the indication sign referres to a specific joint e.g. elbow joint.
+
+For more details look at the table in p. 199 AHG, which shows signs of the parts of the limbs and the part referred to when combined with a contact bow, the part involved when preceding a direction symbol,etc. 
+
+The spatial actions can be described in two ways: 
+1) spatial change, that is movement of the part of the limb to a new dirrection 
+2) anatomical change, the degree of flexion or extension in the joint</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Wrist">
+        <rdfs:comment rdf:datatype="&xsd;string">LowerArms</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#LeftAnkle">
+        <rdfs:comment rdf:datatype="&xsd;string">LeftLowerLeg</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#RightWrist">
+        <rdfs:comment rdf:datatype="&xsd;string">RihgtLowerArm</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#Pelvis">
+        <rdfs:comment rdf:datatype="&xsd;string">Hips = Double Body Part? 
+Pelvis=Unique Body Part?
+We need to disjoint these classes but also we need to make able to infer that pelvis and hips are the same thing
+</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/ontologies/2010/1/Ontology1265621719421.owl#isPerforming">
+        <rdfs:comment rdf:datatype="&xsd;string">a BodyPart or a Performer isPerforming  (doing) a Movement 
+maybe this suits better for the Role</rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

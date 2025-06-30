@@ -1,0 +1,22 @@
+.DS_Store
+.venv
+.vscode
+AIST 'ballet jazz' data
+Dance12
+Literature
+THESIS.code-workspace
+__pycache__
+backup
+homedir_git_backup
+keypoints3d
+l2d_eval
+l2d_train
+mcp_server.py
+output
+pirouette_timeline.py
+raw ballet videos from the openpose dataset- TRAIN
+temp_frame.jpg
+# Data/
+Dataset/
+Transpondancer/models/*
+myenv/

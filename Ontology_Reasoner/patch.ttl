@@ -1,0 +1,32 @@
+@base                          <Ballet.owl> .
+@prefix                   owl: <http://www.w3.org/2002/07/owl#> .
+@prefix                   xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix                  rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix                   rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix                ballet: <http://www.semanticweb.org/ontologies/2014/8/Ballet#> .
+@prefix              swouting: <http://www.example.org/swouting2019#> .
+
+@prefix                    ex: <http://example.org/ballet-ext#> .
+
+ex:hasMotion a owl:ObjectProperty .
+ex:Turn360   a owl:Class .
+
+ballet:Pirouette
+    owl:equivalentClass [
+      a owl:Class ;
+      owl:intersectionOf (
+        [ owl:onProperty    ballet:hasPose ;
+          owl:someValuesFrom ballet:Retiré
+        ]
+        [ owl:onProperty    ex:hasMotion ;
+          owl:someValuesFrom ex:Turn360
+        ]
+      )
+    ] .
+
+ballet:Pirouette swouting:consistsOfMove swouting:turn360.
+ballet:DetournéADroit rdfs:subClassOf ballet:Detourné;	
+	swouting:consistsOfMove swouting:turnBitRight.	
+ballet:DetournéAGauche rdfs:subClassOf ballet:Detourné;	
+	swouting:consistsOfMove swouting:turnBitLeft.	
+ballet:Glissade	swouting:consistsOfMove swouting:moveBitForward.	

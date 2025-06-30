@@ -1,0 +1,29 @@
+@prefix ballet: <http://www.semanticweb.org/ontologies/2014/8/Ballet#> .
+@prefix swouting: <http://www.example.org/swouting2019#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+
+# Define swouting movement types
+swouting:turn360 rdf:type owl:Class .
+swouting:turn360 rdfs:subClassOf ballet:Motion .
+
+# Link Ballet moves to swouting movements
+ballet:Pirouette swouting:consistsOfMove swouting:turn360 .
+ballet:Fouette swouting:consistsOfMove swouting:turn360 .
+
+# Define consistsOfMove property
+swouting:consistsOfMove rdf:type owl:ObjectProperty ;
+    rdfs:domain ballet:BalletMovement ;
+    rdfs:range swouting:turn360 .
+
+# Add equivalence between Turn360 and turn360
+ballet:Turn360 owl:equivalentClass swouting:turn360 .
+
+# Original dancemoves.ttl
+# ballet:Pirouette swouting:consistsOfMove swouting:turn360.
+# ballet:DetournéADroit rdfs:subClassOf ballet:Detourné;	
+# 	swouting:consistsOfMove swouting:turnBitRight.	
+# ballet:DetournéAGauche rdfs:subClassOf ballet:Detourné;	
+# 	swouting:consistsOfMove swouting:turnBitLeft.	
+# ballet:Glissade	swouting:consistsOfMove swouting:moveBitForward.
